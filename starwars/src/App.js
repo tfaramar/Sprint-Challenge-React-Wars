@@ -22,8 +22,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {people.map(data => (
-        <StarWarsPeople name={data.name}
+      {people.map((data, i) => (
+        <StarWarsPeople key={i}
+        name={data.name}
         birthyear={data.birth_year}
         mass={data.mass} />
       ))}
