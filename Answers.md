@@ -18,4 +18,4 @@ Props refer to a components properties. They are passed down from parent compone
 
 1. What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-Side effects basically happen when our function returns output that is not explicitly stated in the input. They are sometimes important parts of our apps, like fetching data from an API, but we need to be able to trap and control side effects, which is why we use useEffect.
+Side effects basically happen when our function returns output that is not explicitly stated in the input. They are sometimes important parts of our apps, like fetching data from an API, but we need to be able to trap and control side effects, which is why we use useEffect. You use the useState hook to sync effects to state/prop changes — it gives us a way to define a variable for state and set the value of that variable.
