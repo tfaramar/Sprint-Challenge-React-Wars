@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './App.scss';
 import StarWarsPeople from './components/StarWarsPeople.js';
 import axios from 'axios';
 
@@ -22,12 +22,15 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {people.map((data, i) => (
-        <StarWarsPeople key={i}
-        name={data.name}
-        birthyear={data.birth_year}
-        mass={data.mass} />
-      ))}
+      <div className="card-wrapper">
+        {people.map((data, i) => (
+          <StarWarsPeople key={i}
+                          name={data.name}
+                          birthyear={data.birth_year}
+                          mass={data.mass}
+                          height={data.height} />
+        ))}
+      </div>
       
     </div>
   );
