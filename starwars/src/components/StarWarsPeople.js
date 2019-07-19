@@ -9,8 +9,8 @@ function StarWarsPeople(props) {
             <Card.Content>
                 <Card.Header>Name: {props.name}</Card.Header>
                 <Card.Meta>Birthyear: {props.birthyear}</Card.Meta>
-                <p>Mass: {props.mass}</p>
-                <p>Height: {props.height}</p>
+                <Card.Description className='stats'>Mass: {props.mass} <br /> Height: {props.height}</Card.Description>
+                
             </Card.Content>
         </Card>
         
