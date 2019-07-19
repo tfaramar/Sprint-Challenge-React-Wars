@@ -16,7 +16,10 @@ const App = () => {
       .then(response => {
         console.log(response.data.results);
         setPeople(response.data.results);
-      });
+      })
+      .catch(error => {
+        console.log('Data is not fetching successfully from the Star Wars API (SWAPI)', error);
+      })
   }, []);
   
   return (
